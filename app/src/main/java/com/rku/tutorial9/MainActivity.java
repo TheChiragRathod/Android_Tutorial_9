@@ -3,6 +3,7 @@ package com.rku.tutorial9;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -42,6 +43,9 @@ public class MainActivity extends AppCompatActivity {
         txtData=findViewById(R.id.txtData);
 
         //Variables Initialization finished here....
+
+        //TextView Data Scroll View method...
+        txtData.setMovementMethod(new ScrollingMovementMethod());
     }
 
 
