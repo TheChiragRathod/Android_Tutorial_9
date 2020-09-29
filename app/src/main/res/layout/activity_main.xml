@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/edtText"
+        android:id="@+id/edtNotes"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -33,10 +33,10 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtText">
+        app:layout_constraintTop_toBottomOf="@+id/edtNotes">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnSaveNotes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginRight="10dp"
@@ -47,7 +47,7 @@
             android:textSize="18sp" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnReadNotes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -59,7 +59,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txtData"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -70,16 +70,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/txtHeading" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnReadAssets"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="80dp"
         android:layout_marginEnd="10dp"
         android:background="@drawable/button_design"
+        android:onClick="readAssets"
         android:text="Read Assets"
         android:textColor="@color/colorText"
         android:textSize="18sp"
@@ -89,7 +90,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txtHeading"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -101,6 +102,6 @@
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/btnReadAssets" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
